@@ -7,6 +7,12 @@ export interface ICar {
   color: IColor;
 }
 
+type tempCar = Omit<ICar, "color">;
+
+export interface ICarForm extends tempCar {
+  color: string;
+}
+
 export interface IColor {
   hexCode: string;
   name: string;

@@ -12,7 +12,7 @@ import {
 import { Link, Navigate, useNavigate, useParams } from "react-router-dom";
 import { useGetCar } from "../hooks/useGetCar";
 import { useGetColors } from "../hooks/useGetColors";
-import { ICar } from "../types/car";
+import { ICar, ICarForm } from "../types/car";
 import { ColorBox, SelectOptionContainer, StyledCard } from "./carForm.styled";
 import request from "../utils/request";
 
@@ -32,9 +32,16 @@ const CarForm = () => {
   const { car, loading } = useGetCar(params.id || "");
   const { colors } = useGetColors();
 
-  const onFinish = (values: ICar) => {
+  const onFinish = (values: ICarForm) => {
     console.log("Received values of form: ", values);
-    updateCar(values).then(() => {
+    const payload = {
+      ...values,
+      color: colors.find((c) => c.hexCode === values.color) ?? {
+        hexCode: "#000000",
+        name: "Black",
+      },
+    };
+    updateCar(payload).then(() => {
       message.success("Car updated successfully");
       navigate("/");
     });
