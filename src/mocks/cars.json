@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "carId": "dsasdasdsad",
+    "inStock": false,
+    "price": 50000,
+    "horsePower": 250,
+    "color": { "hexCode": "#000000", "name": "Black" }
+  },
+  {
+    "id": 2,
+    "carId": "dsasda13dsad",
+    "inStock": true,
+    "price": 500000,
+    "horsePower": 250,
+    "color": { "hexCode": "#000000", "name": "Black" }
+  },
+  {
+    "id": 3,
+    "carId": "qwe222",
+    "inStock": true,
+    "price": 500000,
+    "horsePower": 250,
+    "color": { "hexCode": "#000000", "name": "Black" }
+  },
+  {
+    "id": 4,
+    "carId": "aewdwq1133",
+    "inStock": true,
+    "price": 500000,
+    "horsePower": 250,
+    "color": { "hexCode": "#000000", "name": "Black" }
+  },
+  {
+    "id": 5,
+    "carId": "wqe32232",
+    "inStock": false,
+    "price": 500000,
+    "horsePower": 250,
+    "color": { "hexCode": "#000000", "name": "Black" }
+  },
+  {
+    "id": 6,
+    "carId": "24324dsfsd",
+    "inStock": true,
+    "price": 500000,
+    "horsePower": 250,
+    "color": { "hexCode": "#000000", "name": "Black" }
+  },
+  {
+    "id": 7,
+    "carId": "ewr43fsdq",
+    "inStock": false,
+    "price": 500000,
+    "horsePower": 250,
+    "color": { "hexCode": "#000000", "name": "Black" }
+  }
+]
