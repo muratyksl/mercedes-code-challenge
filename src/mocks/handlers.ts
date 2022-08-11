@@ -2,6 +2,8 @@ import { rest } from "msw";
 import { ICar } from "../types/car";
 // @ts-ignore
 import cars from "./cars";
+// @ts-ignore
+import colors from "./colors";
 
 let memCars: ICar[] = cars;
 
@@ -14,7 +16,7 @@ export const handlers = [
     const car = memCars.find((c) => c.id === Number(id));
     return res(ctx.json(car));
   }),
-  rest.post("api/cars/:id", async (req, res, ctx) => {
+  rest.put("api/cars/:id", async (req, res, ctx) => {
     const { id } = req.params;
     const reqCarObj = await req.json();
     const car = memCars.find((c) => c.id === Number(id));
@@ -27,5 +29,8 @@ export const handlers = [
       });
     }
     return res(ctx.json(memCars.find((c) => c.id === Number(id))));
+  }),
+  rest.get("api/colors", (req, res, ctx) => {
+    return res(ctx.json(colors));
   }),
 ];

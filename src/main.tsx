@@ -12,6 +12,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />}>
+          <Route index element={<CarTable />} />
           <Route path="table" element={<CarTable />} />
           <Route path=":id" element={<CarForm />} />
         </Route>

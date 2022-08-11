@@ -5,7 +5,7 @@
     "inStock": false,
     "price": 50000,
     "horsePower": 250,
-    "color": { "hexCode": "#000000", "name": "Black" }
+    "color": { "name": "Grey", "hex": "#ff0000" }
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "inStock": true,
     "price": 500000,
     "horsePower": 250,
-    "color": { "hexCode": "#000000", "name": "Black" }
+    "color": { "hexCode": "#FF0000", "name": "Red" }
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "inStock": true,
     "price": 500000,
     "horsePower": 250,
-    "color": { "hexCode": "#000000", "name": "Black" }
+    "color": { "hexCode": "#0000FF", "name": "Blue" }
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "inStock": false,
     "price": 500000,
     "horsePower": 250,
-    "color": { "hexCode": "#000000", "name": "Black" }
+    "color": { "hexCode": "#008000", "name": "Green" }
   },
   {
     "id": 6,
